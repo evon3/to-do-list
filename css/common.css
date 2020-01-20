@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: normal;
+	src: url(/cm/css/font/NotoSans/NotoSansKR-Light.woff2) format('woff2'),
+		 url(/cm/css/font/NotoSans/NotoSansKR-Light.woff) format('woff'),
+		 url(/cm/css/font/NotoSans/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: bold;
+	src: url(/cm/css/font/NotoSans/NotoSansKR-Regular.woff2) format('woff2'),
+		 url(/cm/css/font/NotoSans/NotoSansKR-Regular.woff) format('woff'),
+		 url(/cm/css/font/NotoSans/NotoSansKR-Regular.otf) format('opentype');
+}
+
+body {font-family: 'Noto Sans KR', HelveticaNeue-Light, AppleSDGothicNeo-Light, "segoe ui", "malgun gothic", '맑은 고딕', "microsoft neogothic", arial, sans-serif !important;}
+button, a {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #666;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  vertical-align: top;
+  margin: 0 5px;
+}
