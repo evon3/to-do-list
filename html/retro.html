@@ -7,12 +7,15 @@
     <script type='text/javascript' src='../js/retro.js'></script>
   </head>
   <body>
-    <h1><span id='year'></span></h1>
-    <h2><span id='month'></span><span id='date'></span></h2>
-    <div id='list'></div>
-    <div>
-      <input type='text' id='iptTodo' class='h3' placeholder="할일을 입력하세요.">
-      <input type='button' id='btnAdd' class='h3' value='추가'>
+    <div class="main-contents">
+      <h1><span id='year'></span></h1>
+      <h2><span id='month'></span><span id='date'></span></h2>
+      <div id='list'></div>
+      <hr>
+      <div class='list'>
+        <input type='text' id='iptTodo' placeholder="할일을 입력하세요.">
+        <input type='button' id='btnAdd' value='추가'>
+      </div>
     </div>
   </body>
   <script>
@@ -21,14 +24,13 @@
       var today = new Date();
       retro.printDay(today.getFullYear(),today.getMonth()+1,today.getDate());
       retro.showList(todoList);
-      document.getElementById('btnAdd').addEventListener('click',function(){
-        var iptTodo = document.getElementById('iptTodo');
-        if(iptTodo.value != ''){
-          todoList.push(iptTodo.value);
-          iptTodo.value = '';
-          retro.showList(todoList);
-        }
+      document.getElementById('btnAdd').addEventListener('click', function(){
+        retro.addTodo(iptTodo,todoList);
       });
+      document.getElementById('iptTodo').addEventListener('keydown', function(){
+        //enter key event
+      });
+
     }
   </script>
 </html>
