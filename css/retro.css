@@ -15,3 +15,16 @@
   left: 25%; top: 25%;
   text-align: center;
 }
+.night{
+  background-color: black;
+  color: white;
+}
+.night>div{
+  border: 1px solid white;
+}
+.done{
+  text-decoration: line-through;
+}
+.font_test1 { text-decoration:underline }
+.font_test2 { text-decoration:overline }
+.font_test3 { text-decoration:line-through }

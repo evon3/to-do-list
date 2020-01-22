@@ -9,9 +9,12 @@ retro = {
     for(var i in todoList){
       work += "<div id='no"+i+"'><span id='todo"+i+"'>"+todoList[i]+"</span>"
             + "<img src='img/delete.png' id='del"+i+"' class='delete' onclick='retro.delete(this,todoList)'/></div>";
-      // work += "<div id='no"+i+"'><span id='todo"+i+"'>"+todoList[i]+"</span>"
-      //       + "<a id='del"+i+"' class='delete' onclick='retro.delete(this,todoList)'>del</a></div>";
       document.getElementById("list").innerHTML = work;
+    }
+    var childs = document.getElementById('list').childNodes;
+    console.log("childs count : "+ childs.length);
+    if(childs.length > 0){
+      childs.forEach(retro.toggleTodo);
     }
   },
   delete : function(item,list){
@@ -26,5 +29,22 @@ retro = {
       comp.value = '';
       retro.showList(list);
     }
+  },
+  toggleTodo : function(item){
+    item.addEventListener('dblclick',function(){
+      debugger;
+      // this.toggleAttribute('class','done')
+    });
   }
 }
+//선택자 참고 !
+//document.getElementById('id').childNodes
+//parentNode
+//document.querySelector('#id')
+//document.querySelector('.class')
+//document.querySelector('tag')
+//document.getElementById('id')
+//document.getElementsByClassName('class')
+//document.getElementsByName('name')
+//document.getElementsByTagName('tag')
+//document.getElementsByTagNameNS('tag')//뭔지모름
