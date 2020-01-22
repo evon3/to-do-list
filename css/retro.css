@@ -15,16 +15,18 @@
   left: 25%; top: 25%;
   text-align: center;
 }
-.night{
-  background-color: black;
-  color: white;
-}
-.night>div{
-  border: 1px solid white;
+#list>div{
+  cursor: pointer;
 }
 .done{
   text-decoration: line-through;
+  color: powderblue;
 }
 .font_test1 { text-decoration:underline }
 .font_test2 { text-decoration:overline }
 .font_test3 { text-decoration:line-through }
+
+/*
+선택자 참고 !
+A>B : A밑에 바로 밑에 있는 B만 적용
+*/

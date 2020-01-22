@@ -31,10 +31,12 @@ retro = {
     }
   },
   toggleTodo : function(item){
-    item.addEventListener('dblclick',function(){
-      debugger;
-      // this.toggleAttribute('class','done')
+    item.addEventListener('click',function(){
+      this.classList.toggle('done');
     });
+    // item.addEventListener('dblclick',function(){
+    //   this.classList.toggle('done');
+    // });
   }
 }
 //선택자 참고 !

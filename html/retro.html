@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <script type='text/javascript' src='../js/retro.js'></script>
   </head>
-  <body class='night'>
+  <body>
     <div class="main-contents">
       <h1><span id='year'></span></h1>
       <h2><span id='month'></span><span id='date'></span></h2>
@@ -31,6 +31,7 @@
       document.getElementById('iptTodo').addEventListener('keydown', function(e){
         if(e.keyCode == 13){
           retro.addTodo(iptTodo,todoList);
+          iptTodo.focus;
         }
       });
     }
