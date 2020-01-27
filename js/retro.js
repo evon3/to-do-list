@@ -8,7 +8,7 @@ retro = {
     var work = "";
     for(var i in todoList){
       work += "<div id='no"+i+"'><span id='todo"+i+"'>"+todoList[i]+"</span>"
-            + "<img src='img/delete.png' id='del"+i+"' class='delete' onclick='retro.delete(this,todoList)'/></div>";
+            + "<img src='../img/delete.png' id='del"+i+"' class='delete' onclick='retro.delete(this,todoList)'/></div>";
       // work += "<div id='no"+i+"'><span id='todo"+i+"'>"+todoList[i]+"</span>"
       //       + "<a id='del"+i+"' class='delete' onclick='retro.delete(this,todoList)'>del</a></div>";
       document.getElementById("list").innerHTML = work;
