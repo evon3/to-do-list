@@ -18,9 +18,9 @@
 
         <main>
             <div class="aside">
-                
+
             </div>
-            <!--
+
             <div class="content">
                 <div class="title">TO DO LIST</div>
                 <ul class="tab-header">
@@ -46,11 +46,25 @@
 
                     </ul>
                 </ul>
-                <a class="btn_add">추가</a>
+                <a id='btn_add' class="btn_add" name='btn_add'>추가</a>
             </div>
-            -->
         </main>
         <footer>
         </footer>
     </body>
+    <script>
+        window.onload = function(){
+            document.getElementById('btn_add').addEventListener('click',function(){//추천★
+              alert(message.js);
+              //밑에꺼 이용하면 클래스 쉽게 다룰수 있음!..this는 추가버튼임 ㅋㅋ this = document.getElementById('btn_add')
+              /*
+              this.classList
+              this.classList.add('className');
+              this.classList.remove('className')
+              this.classList.toggle('className')
+              this.classList.value
+              */
+            });
+        }
+    </script>
 </html>
