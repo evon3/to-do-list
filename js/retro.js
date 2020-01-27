@@ -13,6 +13,11 @@ retro = {
       //       + "<a id='del"+i+"' class='delete' onclick='retro.delete(this,todoList)'>del</a></div>";
       document.getElementById("list").innerHTML = work;
     }
+    var childs = document.getElementById('list').childNodes;
+    console.log("childs count : "+ childs.length);
+    if(childs.length > 0){
+      childs.forEach(retro.toggleTodo);
+    }
   },
   delete : function(item,list){
     var idx = item.id.substr(3);
@@ -26,5 +31,24 @@ retro = {
       comp.value = '';
       retro.showList(list);
     }
+  },
+  toggleTodo : function(item){
+    item.addEventListener('click',function(){
+      this.classList.toggle('done');
+    });
+    // item.addEventListener('dblclick',function(){
+    //   this.classList.toggle('done');
+    // });
   }
 }
+//선택자 참고 !
+//document.getElementById('id').childNodes
+//parentNode
+//document.querySelector('#id')
+//document.querySelector('.class')
+//document.querySelector('tag')
+//document.getElementById('id')
+//document.getElementsByClassName('class')
+//document.getElementsByName('name')
+//document.getElementsByTagName('tag')
+//document.getElementsByTagNameNS('tag')//뭔지모름
