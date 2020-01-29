@@ -27,7 +27,7 @@ body {
 		text-align: center;
 		vertical-align: middle;
 }
-a {text-decoration: none;}
+a {text-decoration: none;cursor: pointer;}
 ul, ol, dl {list-style: none;margin: 0;padding: 0;}
 
 /* content */
@@ -42,6 +42,7 @@ main {
     height: 100%;
     box-sizing: border-box;
 }
+/*
 main.on {
 		transition:1s;
 		transition-timing-function:ease-in-out;
@@ -56,6 +57,43 @@ main.on .content {
 		transition-timing-function:ease-in-out;
 		transform:translate(50%, -50%);
 }
+main {
+		transition:1s;
+		transition-timing-function:ease-in-out;
+}
+main .aside {
+		transition:1s;
+		transition-timing-function:ease-in-out;
+		transform:translate(0, -50%);
+}
+main .content {
+		transition:1s;
+		transition-timing-function:ease-in-out;
+		transform:translate(0, -50%);
+} */
+main.on .aside {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+
 .aside {
 		display: inline-block;
 		vertical-align: middle;
@@ -112,7 +150,7 @@ main.on .content {
 .tab-content li > .box {display: none;position: absolute;right: 18px;top: 0;height: 30px;width: auto;box-sizing: border-box;padding: 0;margin-top: 2px;}
 .tab-content li.on > .box {display: inline-block;}
 
-
+.btn-gp {display: inline-block;width: 100%;font-size: 0;text-align: right;}
 
 
 /* button */
@@ -150,4 +188,23 @@ a.btn_editer {
 a.btn_delete {
 		background-image: url(../img/trash.png);
 		background-color: #f3594c;
+}
+.btn-gp > a {
+		display: inline-block;
+		width: auto;
+		padding: 5px 15px;
+		border-radius: 5px;
+		font-size: 15px;
+		box-sizing: border-box;
+		margin-left: 5px;
+}
+a.btn_save {
+		background-color: #4e50e1;
+		border: 1px solid #4e50e1;
+		color: #fff;
+}
+a.btn_cancle {
+		background-color: #fff;
+		border: 1px solid #999;
+		color: #666;
 }
