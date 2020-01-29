@@ -42,7 +42,7 @@ main {
     height: 100%;
     box-sizing: border-box;
 }
-/*
+
 main.on {
 		transition:1s;
 		transition-timing-function:ease-in-out;
@@ -70,28 +70,6 @@ main .content {
 		transition:1s;
 		transition-timing-function:ease-in-out;
 		transform:translate(0, -50%);
-} */
-main.on .aside {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-o-keyframes fadein { /* Opera */
-    from {opacity:0;}
-    to {opacity: 1;}
 }
 
 .aside {
