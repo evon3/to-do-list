@@ -4,17 +4,17 @@
 	font-family: 'Noto Sans KR';
 	font-style: normal;
 	font-weight: normal;
-	src: url(../font/NotoSansKR-Light.woff2) format('woff2'),
-		 url(../font/NotoSansKR-Light.woff) format('woff'),
-		 url(../font/NotoSansKR-Light.otf) format('opentype');
+	src: url(../../font/NotoSansKR-Light.woff2) format('woff2'),
+		 url(../../font/NotoSansKR-Light.woff) format('woff'),
+		 url(../../font/NotoSansKR-Light.otf) format('opentype');
 }
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-style: normal;
 	font-weight: bold;
-	src: url(../font/NotoSansKR-Regular.woff2) format('woff2'),
-		 url(../font/NotoSansKR-Regular.woff) format('woff'),
-		 url(../font/NotoSansKR-Regular.otf) format('opentype');
+	src: url(../../font/NotoSansKR-Regular.woff2) format('woff2'),
+		 url(../../font/NotoSansKR-Regular.woff) format('woff'),
+		 url(../../font/NotoSansKR-Regular.otf) format('opentype');
 }
 
 html, body {margin: 0;padding: 0;}

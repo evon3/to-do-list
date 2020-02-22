@@ -3,7 +3,7 @@ body {
 }
 body:before {
     content: ' ';
-    background-image: url(../img/bg.jpg);
+    background-image: url(../../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ section.da {
     background-color: #ce1b28;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../img/cta01.jpg);
+    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;

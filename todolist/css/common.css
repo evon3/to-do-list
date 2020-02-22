@@ -4,17 +4,17 @@
 	font-family: 'Noto Sans KR';
 	font-style: normal;
 	font-weight: normal;
-	src: url(../font/NotoSansKR-Light.woff2) format('woff2'),
-		 url(../font/NotoSansKR-Light.woff) format('woff'),
-		 url(../font/NotoSansKR-Light.otf) format('opentype');
+	src: url(font/NotoSansKR-Light.woff2) format('woff2'),
+		 url(font/NotoSansKR-Light.woff) format('woff'),
+		 url(font/NotoSansKR-Light.otf) format('opentype');
 }
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-style: normal;
 	font-weight: bold;
-	src: url(../font/NotoSansKR-Regular.woff2) format('woff2'),
-		 url(../font/NotoSansKR-Regular.woff) format('woff'),
-		 url(../font/NotoSansKR-Regular.otf) format('opentype');
+	src: url(font/NotoSansKR-Regular.woff2) format('woff2'),
+		 url(font/NotoSansKR-Regular.woff) format('woff'),
+		 url(font/NotoSansKR-Regular.otf) format('opentype');
 }
 
 /* reset */
@@ -158,13 +158,13 @@ main .content {
     background-position: center;
 }
 a.btn_check {
-		background-image: url(../img/checkicon.png);
+		background-image: url(img/checkicon.png);
 }
 a.btn_editer {
-		background-image: url(../img/edit.png);
+		background-image: url(img/edit.png);
 }
 a.btn_delete {
-		background-image: url(../img/trash.png);
+		background-image: url(img/trash.png);
 		background-color: #f3594c;
 }
 .btn-gp > a {
